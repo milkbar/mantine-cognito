@@ -1,0 +1,84 @@
+{
+  "name": "mantine-cognito",
+  "type": "module",
+  "version": "0.1.0-alpha.1",
+  "description": "A client side UI for AWS Cognito using Mantine.dev components.",
+  "keywords": [
+    "mantine",
+    "cognito",
+    "react",
+    "typescript",
+    "login"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milkbar/mantine-cognito.git"
+  },
+  "homepage": "https://github.com/milkbar/mantine-cognito",
+  "bugs": {
+    "url": "https://github.com/milkbar/mantine-cognito/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rob Blau",
+    "email": "robblau@milkbar.com"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/mantine-cognito.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "watch": "rm -rf dist && rollup -c -w",
+    "lint": "eslint .",
+    "dev:push": "rm -rf dist && rollup -c && yalc push --sig"
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^4.0.0",
+    "@aws-sdk/credential-providers": "^3.291.0",
+    "@aws-sdk/protocol-http": "^3.290.0",
+    "@aws-sdk/signature-v4": "^3.290.0",
+    "@aws-sdk/util-format-url": "^3.290.0",
+    "amazon-cognito-identity-js": "^6.1.2",
+    "qrcode.react": "^3.1.0",
+    "ua-parser-js": "^1.0.34"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/core": "^6.0.1",
+    "@mantine/form": "^6.0.1",
+    "@mantine/hooks": "^6.0.1",
+    "@mantine/notifications": "^6.0.2",
+    "@tabler/icons-react": "^2.10.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
+    "@emotion/react": "^11.10.6",
+    "@mantine/core": "^6.0.1",
+    "@mantine/form": "^6.0.1",
+    "@mantine/hooks": "^6.0.1",
+    "@mantine/notifications": "^6.0.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@tabler/icons-react": "^2.10.0",
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/ua-parser-js": "^0.7.36",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.0.1",
+    "react": "^18.2.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.5.0",
+    "typescript": "*"
+  }
+}

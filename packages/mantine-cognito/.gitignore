@@ -1,0 +1,10 @@
+.DS_Store
+
+node_modules
+
+yarn-debug.log*
+yarn-error.log*
+
+dist
+
+tsconfig.tsbuildinfo
