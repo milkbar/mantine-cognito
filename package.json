@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "workspaces": [
+        "storybook",
+        "packages/*"
+    ],
+    "scripts": {
+        "storybook": "yarn workspace mantine-cognito-storybook run storybook",
+        "lib:build": "yarn workspace mantine-cognito run build",
+        "lib:push": "yarn workspace mantine-cognito run dev:push",
+        "lib:watch": "yarn workspace mantine-cognito run watch",
+        "lib:publish": "yarn workspace mantine-cognito run dev:publish"
+    }
+}

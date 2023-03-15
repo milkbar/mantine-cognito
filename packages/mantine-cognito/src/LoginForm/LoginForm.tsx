@@ -93,7 +93,7 @@ export const LoginForm = ({ email, setStage, onLogin, setEmail }: LoginFormProps
     return (
         <Container size={420} my={40}>
             <Title align="center">
-                <Text>Welcome biwblck!</Text>
+                <Text>Welcome back!</Text>
             </Title>
             <Text color="dimmed" size="sm" align="center" mt={5}>
                 <Text span>{"Don't have an account yet? "}</Text>
