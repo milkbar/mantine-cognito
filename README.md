@@ -10,6 +10,8 @@
 
 This project provides a Mantine based front end for an AWS Cognito login.
 
+<img src="https://user-images.githubusercontent.com/319506/225537205-b4d9e03b-b5fb-4b12-a17a-ae3f4fe66b7b.png" alt="image" width="300"/>
+
 The code is working, but the project is super early in its lifespan and
 is still coming together. Documentation is in the works.
 
