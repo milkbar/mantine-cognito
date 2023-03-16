@@ -1,7 +1,7 @@
 {
-  "name": "mantine-cognito",
+  "name": "@milkbar/mantine-cognito",
   "type": "module",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.4",
   "description": "A client side UI for AWS Cognito using Mantine.dev components.",
   "keywords": [
     "mantine",
@@ -28,14 +28,17 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "watch": "rm -rf dist && rollup -c -w",
     "lint": "eslint .",
     "dev:push": "rm -rf dist && rollup -c && yalc push --sig",
-    "dev:publish": "rm -rf dist && rollup -c && yarn npm publish"
+    "dev:publish": "rm -rf dist && rollup -c && npm publish --access=public"
   },
   "dependencies": {
     "@aws-crypto/sha256-js": "^4.0.0",

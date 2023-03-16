@@ -46,9 +46,9 @@ export default [{
 		typescript(),
 		copy({
 			targets: [
-				{ src: "../../README.md", dest: "dist" },
-				{ src: "../../LICENSE", dest: "dist" },
-				{ src: "../../CONTRIBUTING.md", dest: "dist" },
+				{ src: "../../README.md", dest: "." },
+				{ src: "../../LICENSE", dest: "." },
+				{ src: "../../CONTRIBUTING.md", dest: "." },
 			]
 		})
 	]
