@@ -1,5 +1,5 @@
 {
-  "name": "mantine-cognito-storybook",
+  "name": "@milkbar/mantine-cognito-storybook",
   "dependencies": {
     "@aws-crypto/sha256-js": "^4.0.0",
     "@aws-sdk/credential-providers": "^3.292.0",
@@ -11,11 +11,11 @@
     "@mantine/form": "^6.0.2",
     "@mantine/hooks": "^6.0.2",
     "@mantine/notifications": "^6.0.2",
+    "@milkbar/mantine-cognito": "file:.yalc/@milkbar/mantine-cognito",
     "@storybook/addon-a11y": "^6.5.16",
     "@storybook/addon-storysource": "^6.5.16",
     "@tabler/icons-react": "^2.10.0",
     "amazon-cognito-identity-js": "^6.1.2",
-    "mantine-cognito": "file:.yalc/mantine-cognito",
     "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -39,7 +39,6 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "babel-loader": "^8.3.0",
-    "eslint": "^8.36.0",
     "react-is": "^18.2.0",
     "storybook-dark-mode": "^2.1.1",
     "webpack": "^5.76.2"

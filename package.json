@@ -1,14 +1,15 @@
 {
     "private": true,
     "workspaces": [
-        "storybook",
+        "apps/*",
         "packages/*"
     ],
     "scripts": {
-        "storybook": "yarn workspace mantine-cognito-storybook run storybook",
-        "lib:build": "yarn workspace mantine-cognito run build",
-        "lib:push": "yarn workspace mantine-cognito run dev:push",
-        "lib:watch": "yarn workspace mantine-cognito run watch",
-        "lib:publish": "yarn workspace mantine-cognito run dev:publish"
+        "storybook": "yarn workspace @milkbar/mantine-cognito-storybook run storybook",
+        "build-storybook": "yarn workspace @milkbar/mantine-cognito-storybook run build-storybook",
+        "lib:build": "yarn workspace @milkbar/mantine-cognito run build",
+        "lib:push": "yarn workspace @milkbar/mantine-cognito run dev:push",
+        "lib:watch": "yarn workspace @milkbar/mantine-cognito run watch",
+        "lib:publish": "yarn workspace @milkbar/mantine-cognito run dev:publish"
     }
 }

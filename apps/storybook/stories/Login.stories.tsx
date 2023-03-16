@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
-import { Login as LoginComponent } from "mantine-cognito"
+import { Login as LoginComponent } from "@milkbar/mantine-cognito"
 
 export default {
     title: "Login",

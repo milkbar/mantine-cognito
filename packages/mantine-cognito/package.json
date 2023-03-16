@@ -36,7 +36,6 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "watch": "rm -rf dist && rollup -c -w",
-    "lint": "eslint .",
     "dev:push": "rm -rf dist && rollup -c && yalc push --sig",
     "dev:publish": "rm -rf dist && rollup -c && npm publish --access=public"
   },
@@ -75,9 +74,6 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/ua-parser-js": "^0.7.36",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@typescript-eslint/parser": "^5.55.0",
-    "eslint": "^8.0.1",
     "react": "^18.2.0",
     "rollup": "^3.19.1",
     "rollup-plugin-copy": "^3.4.0",

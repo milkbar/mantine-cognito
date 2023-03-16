@@ -1,15 +1,18 @@
 {
     "include": ["src", "@types/node"],
     "compilerOptions": {
+        "rootDir": "./src",
+        "target": "es6",
+        "module": "esnext",
+        "jsx": "react-jsx",
+        "composite": true,
         "declaration": true,
         "declarationDir": "types",
         "emitDeclarationOnly": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "importHelpers": true,
-        "jsx": "react-jsx",
         "lib": ["dom", "esnext"],
-        "module": "esnext",
         "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "noImplicitReturns": true,
@@ -17,9 +20,7 @@
         "noUnusedParameters": true,
         "skipLibCheck": true,
 
-        "rootDir": "./src",
         "sourceMap": true,
         "strict": true,
-        "target": "ES6",
     }
 }
