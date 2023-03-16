@@ -1,4 +1,5 @@
 import dts from "rollup-plugin-dts"
+import copy from "rollup-plugin-copy"
 import external from "rollup-plugin-peer-deps-external"
 import resolve from "@rollup/plugin-node-resolve"
 import typescript from "@rollup/plugin-typescript"
@@ -43,6 +44,13 @@ export default [{
 		external(),
 		resolve(),
 		typescript(),
+		copy({
+			targets: [
+				{ src: "../../README.md", dest: "dist" },
+				{ src: "../../LICENSE", dest: "dist" },
+				{ src: "../../CONTRIBUTING.md", dest: "dist" },
+			]
+		})
 	]
 },
 {
