@@ -1,1 +1,1 @@
-export * from './PasswordCreateInput'
+export * from './PasswordCreateInput';

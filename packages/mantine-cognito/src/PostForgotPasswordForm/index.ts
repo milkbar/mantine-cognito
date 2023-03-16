@@ -1,1 +1,1 @@
-export * from "./PostForgotPasswordForm"
+export * from './PostForgotPasswordForm';

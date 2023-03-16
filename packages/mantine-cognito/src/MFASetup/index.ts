@@ -1,1 +1,1 @@
-export * from "./MFASetup"
+export * from './MFASetup';
