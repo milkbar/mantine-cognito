@@ -7,9 +7,9 @@ https://github.com/aws-amplify/amplify-js/tree/master/packages/amazon-cognito-id
 
 */
 
-export * from "./forgot"
-export * from "./mfa"
-export * from "./register"
-export * from "./session"
-export * from "./user"
-export * from "./utility"
+export * from './forgot';
+export * from './mfa';
+export * from './register';
+export * from './session';
+export * from './user';
+export * from './utility';

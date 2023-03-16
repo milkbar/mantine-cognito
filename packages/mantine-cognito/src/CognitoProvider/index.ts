@@ -1,1 +1,1 @@
-export * from "./CognitoProvider"
+export * from './CognitoProvider';

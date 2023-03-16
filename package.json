@@ -1,15 +1,35 @@
 {
-    "private": true,
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ],
-    "scripts": {
-        "storybook": "yarn workspace @milkbar/mantine-cognito-storybook run storybook",
-        "build-storybook": "yarn workspace @milkbar/mantine-cognito-storybook run build-storybook",
-        "lib:build": "yarn workspace @milkbar/mantine-cognito run build",
-        "lib:push": "yarn workspace @milkbar/mantine-cognito run dev:push",
-        "lib:watch": "yarn workspace @milkbar/mantine-cognito run watch",
-        "lib:publish": "yarn workspace @milkbar/mantine-cognito run dev:publish"
-    }
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "lib:build": "yarn workspace @milkbar/mantine-cognito run build",
+    "lib:push": "yarn workspace @milkbar/mantine-cognito run dev:push",
+    "lib:watch": "yarn workspace @milkbar/mantine-cognito run watch",
+    "lib:publish": "yarn workspace @milkbar/mantine-cognito run dev:publish",
+    "storybook": "yarn workspace @milkbar/mantine-cognito-storybook run storybook",
+    "build-storybook": "yarn workspace @milkbar/mantine-cognito-storybook run build-storybook",
+    "lint": "eslint . && prettier -c ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.4",
+    "typescript": "*"
+  }
 }

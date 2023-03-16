@@ -27,19 +27,15 @@ To use it in your code, first wrap your app with a new provider above any
 components that need access to authentication information:
 
 ```tsx
-import { CognitoProvider } from "mantine-cognito"
+import { CognitoProvider } from 'mantine-cognito';
 
 root.render(
-    <React.StrictMode>
-      <CognitoProvider
-          cognitoClientID={clientID}
-          cognitoUserPoolID={userPoolID}
-          cognitoIdentityPoolID={identityPoolID}
-      >
-        <App />
-      </CognitoProvider>
-    </React.StrictMode>,
-)
+  <React.StrictMode>
+    <CognitoProvider cognitoClientID={clientID} cognitoUserPoolID={userPoolID} cognitoIdentityPoolID={identityPoolID}>
+      <App />
+    </CognitoProvider>
+  </React.StrictMode>
+);
 ```
 
 The Client ID and User Pool ID are required and are the IDs of the AWS
@@ -52,22 +48,22 @@ User Pool to access other AWS services using their authentication.
 Once you have the provider installed, you can add in the Login component:
 
 ```tsx
-import { Login, LoginStage } from "mantine-cognito"
+import { Login, LoginStage } from 'mantine-cognito';
 
 export interface LoginPageProps {
-    stage?: LoginStage
+  stage?: LoginStage;
 }
 
-export const LoginPage = ({ stage = "login" }: LoginPageProps) => {
+export const LoginPage = ({ stage = 'login' }: LoginPageProps) => {
   return (
     <Login
       stage={stage}
       onLogin={(attributes) => {
-        console.log(`User logged in ${attributes.email}`)
+        console.log(`User logged in ${attributes.email}`);
       }}
     />
-  )
-}
+  );
+};
 ```
 
 The Login component provides all the user interface needed for an
@@ -110,28 +106,24 @@ import { ProtectedRoute } from "mantine-cognito"
 There is also a component available for users to enable / disable MFA on their accounts:
 
 ```tsx
-import { MFASetup } from "mantine-cognito"
+import { MFASetup } from 'mantine-cognito';
 
 export const Settings = () => {
-  return <MFASetup mfaAppName="My Example Application"/>
-}
+  return <MFASetup mfaAppName="My Example Application" />;
+};
 ```
 
 You also have access to some methods via a hook that is available anywhere
 under the `CognitoProvider`:
 
 ```tsx
-import { useCognito } from "mantine-cognito"
+import { useCognito } from 'mantine-cognito';
 
 export const SignoutButton = () => {
-  const { logout } = useCognito()
+  const { logout } = useCognito();
 
-  return (
-    <Button onClick={() => logout()}>
-      Log Out
-    </Button>
-  )
-}
+  return <Button onClick={() => logout()}>Log Out</Button>;
+};
 ```
 
 Or for example, if you have an identity pool setup and need a signed AWS url
