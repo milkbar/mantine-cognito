@@ -35,7 +35,10 @@
   ],
   "scripts": {
     "build": "rm -rf dist && rollup -c",
-    "watch": "rm -rf dist && rollup -c -w",
+    "build:watch": "rm -rf dist && rollup -c -w",
+    "test": "TS_JEST_DISABLE_VER_CHECKER=true jest -c ./test/jest.config.ts",
+    "test:watch": "TS_JEST_DISABLE_VER_CHECKER=true jest --watch -c ./test/jest.config.ts",
+    "test:coverage": "TS_JEST_DISABLE_VER_CHECKER=true jest --coverage --colors -c ./test/jest.config.ts",
     "dev:push": "rm -rf dist && rollup -c && yalc push --sig",
     "dev:publish": "rm -rf dist && rollup -c && npm publish --access=public"
   },
@@ -70,15 +73,21 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@tabler/icons-react": "^2.10.0",
+    "@types/jest": "^29.5.0",
     "@types/node": "^18.15.3",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/ua-parser-js": "^0.7.36",
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "react": "^18.2.0",
     "rollup": "^3.19.1",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-dts": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
     "typescript": "*"
   }

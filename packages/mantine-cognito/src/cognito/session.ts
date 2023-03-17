@@ -14,7 +14,7 @@ export const login = async (
   config: CognitoConfig,
   email: string,
   password: string,
-  remember: boolean,
+  remember: boolean = false,
   totp?: string
 ) => {
   return await new Promise<CognitoUserSession>((resolve, reject) => {
