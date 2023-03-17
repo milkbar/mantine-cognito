@@ -45,7 +45,9 @@ export default [
       }),
       external(),
       resolve(),
-      typescript(),
+      typescript({
+        exclude: ['**/*.test.ts', '**/*.test.tsx'],
+      }),
       copy({
         targets: [
           { src: '../../README.md', dest: '.' },

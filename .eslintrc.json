@@ -5,7 +5,7 @@
     }
   },
   "parserOptions": {
-    "project": ["packages/*/tsconfig.json", "apps/*/tsconfig.json"],
+    "project": ["packages/*/tsconfig.json", "packages/*/test/tsconfig.json", "apps/*/tsconfig.json"],
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
@@ -29,5 +29,5 @@
     "es2021": true,
     "node": true
   },
-  "ignorePatterns": ["dist", "node_modules", "rollup.config.js"]
+  "ignorePatterns": ["dist", "node_modules", "rollup.config.js", "coverage"]
 }

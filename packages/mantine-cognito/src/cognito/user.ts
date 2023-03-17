@@ -25,3 +25,12 @@ export const getUserAttributes = async (config: CognitoConfig) => {
     });
   });
 };
+
+export const deleteUser = async (config: CognitoConfig) => {
+  return await authenticatedCall<string>(config, (cognitoUser, resolve, reject) => {
+    cognitoUser.deleteUser((err, result) => {
+      if (err != null) return reject(err);
+      resolve(result ?? 'User deleted.');
+    });
+  });
+};
