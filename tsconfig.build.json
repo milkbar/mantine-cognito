@@ -1,0 +1,13 @@
+{
+  "extends": "tsconfig-milkbar/react.json",
+  "include": ["src"],
+  "exclude": ["./lib", "./esm", "./cjs", "**/*.stories.tsx", "**/*.test.tsx", "**/*.test.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "sourceMap": true
+  }
+}
