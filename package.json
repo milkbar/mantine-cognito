@@ -1,7 +1,7 @@
 {
   "name": "@milkbar/mantine-cognito",
   "description": "A client side UI for AWS Cognito using Mantine.dev components.",
-  "version": "0.1.0-beta.4",
+  "version": "0.1.1-beta.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
