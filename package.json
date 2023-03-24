@@ -21,6 +21,7 @@
   "keywords": [
     "mantine",
     "cognito",
+    "terraform",
     "react",
     "typescript",
     "login"

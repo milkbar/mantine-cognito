@@ -152,6 +152,10 @@ export const WebsocketProvider = ({ url, children }: WebsocketProviderProps) => 
 }
 ```
 
+## Terraform
+
+There is an example terraform module for creating a compatible cognito environment in the [infrastructure](infrastructure) directory of the repo.
+
 ## Code contributors
 
 [![Contributors list](https://contrib.rocks/image?repo=milkbar/mantine-cognito)](https://github.com/milkbar/mantine-cognito/graphs/contributors)
